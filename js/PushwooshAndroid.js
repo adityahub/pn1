@@ -48,7 +48,7 @@ function registerPushwooshAndroid() {
 	pushNotification.registerDevice(
 		function(token)
 		{
-			alert(token);
+			alert("PushNews is up and running.");
 			//callback when pushwoosh is ready
 			onPushwooshAndroidInitialized(token);
 		},
