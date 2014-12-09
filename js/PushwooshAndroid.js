@@ -19,7 +19,7 @@
 
 function registerPushwooshAndroid() {
 
- 	var pushNotification = window.plugins.pushNotification;
+ 	var pushNotification = "hi";
 
 	//set push notifications handler
 	document.addEventListener('push-notification',
@@ -34,7 +34,7 @@ function registerPushwooshAndroid() {
 			}
 
 			//and show alert
-			alert("Hi");
+			alert(title);
 
 			//stopping geopushes
 			//pushNotification.stopGeoPushes();
