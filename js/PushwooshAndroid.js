@@ -51,7 +51,7 @@ function registerPushwooshAndroid() {
 			alert(token);
 			//callback when pushwoosh is ready
 			onPushwooshAndroidInitialized(token);
-		}
+		},
 		function(status)
 		{
 			alert("failed to register: " +  status);
