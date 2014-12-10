@@ -47,7 +47,10 @@ function registerPushwooshAndroid() {
 	//register for push notifications
 	pushNotification.registerDevice(
 		function(token)
-		
+		{
+			//callback when pushwoosh is ready
+			onPushwooshAndroidInitialized(token);
+		}
 		function(status)
 		{
 			alert("failed to register: " +  status);
